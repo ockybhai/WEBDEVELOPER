@@ -1,0 +1,28 @@
+<html>
+<head>
+<body>
+<style>
+p{
+font-size : 30px;
+color : green;
+}
+</style>
+<center>
+<h1>calculate the age from DOB</h1>
+<p>your age:</p>
+<p id="g"></p>
+<p>your name is:</p>
+<p id="p"></p>
+<script>
+var x = prompt("enter the name")
+var y = new Date(prompt("enter your DOB(yyyy-mm-dd)"))
+var date= new Date()
+var z = date.getFullYear() - y.getFullYear() 
+document.getElementById("g").innerHTML =z;
+document.getElementById("p").innerHTML =x;   
+</script>
+
+</center>
+
+</body>
+</html>
